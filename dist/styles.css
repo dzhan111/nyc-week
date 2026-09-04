@@ -1,0 +1,361 @@
+/* Mobile-first. This gets read on a phone, standing on a sidewalk. */
+
+:root {
+  color-scheme: light dark;
+  --bg: #fbfaf8;
+  --surface: #ffffff;
+  --border: #e6e2db;
+  --text: #1b1a17;
+  --muted: #6b665d;
+  --accent: #1f5fd6;
+  --free: #0f7b4f;
+  --free-bg: #e4f4ec;
+  --food: #a8410a;
+  --food-bg: #fdeee2;
+  --chip-bg: #f0ede7;
+  --past: #a5a099;
+  --radius: 10px;
+  --wrap: 780px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14140f;
+    --surface: #1c1c18;
+    --border: #32312b;
+    --text: #eceae4;
+    --muted: #9d988e;
+    --accent: #7fa8f5;
+    --free: #6fd8a4;
+    --free-bg: #143528;
+    --food: #f0a06a;
+    --food-bg: #3a2415;
+    --chip-bg: #26251f;
+    --past: #625e57;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.55 ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+a { color: var(--accent); }
+
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ---------------------------------------------------------------- header */
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+.site-header .wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  flex-wrap: wrap;
+}
+.brand h1 {
+  margin: 0;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+.brand h1 a { color: inherit; text-decoration: none; }
+.tagline {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.site-nav a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+/* ---------------------------------------------------------------- banners */
+
+.fixture-banner,
+.archive-banner {
+  margin: 16px 0 0;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  font-size: 0.88rem;
+  background: var(--food-bg);
+  color: var(--food);
+  border: 1px solid color-mix(in srgb, var(--food) 25%, transparent);
+}
+.archive-banner {
+  background: var(--chip-bg);
+  color: var(--muted);
+  border-color: var(--border);
+}
+
+/* ---------------------------------------------------------------- week head */
+
+.week-head { margin: 22px 0 14px; }
+.week-range {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+}
+.week-sub {
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* ---------------------------------------------------------------- filters */
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.chips {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+}
+.chips::-webkit-scrollbar { display: none; }
+.chip {
+  flex: 0 0 auto;
+  border: 1px solid var(--border);
+  background: var(--chip-bg);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: inherit;
+}
+.chip.is-on {
+  background: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
+}
+.toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.toggle { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.toggle select {
+  font: inherit;
+  padding: 3px 6px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
+
+/* ---------------------------------------------------------------- day nav */
+
+.day-nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  margin: 0 -16px;
+  padding: 0 16px;
+}
+.day-nav-inner {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 8px 0;
+}
+.day-nav-inner::-webkit-scrollbar { display: none; }
+.day-nav a {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 44px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--muted);
+  line-height: 1.2;
+}
+.day-nav a span { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.day-nav a b { font-size: 1rem; color: var(--text); }
+.day-nav a.is-today { background: var(--text); }
+.day-nav a.is-today span, .day-nav a.is-today b { color: var(--bg); }
+.day-nav a.is-past { opacity: 0.4; }
+.day-nav a.is-empty { display: none; }
+
+/* ---------------------------------------------------------------- days */
+
+.day {
+  padding-top: 24px;
+  /* Clears the sticky day-nav so anchor jumps don't hide the heading under it. */
+  scroll-margin-top: 52px;
+}
+.day.is-past .day-title { color: var(--past); }
+.day.is-past .event { opacity: 0.62; }
+
+.day-title {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  border-bottom: 2px solid var(--text);
+  padding-bottom: 6px;
+}
+.day.is-past .day-title { border-bottom-color: var(--border); }
+.day-relative:not(:empty) {
+  background: var(--text);
+  color: var(--bg);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 7px;
+  border-radius: 999px;
+}
+.day-date { font-weight: 600; }
+.day-count {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.category { margin: 14px 0 0; }
+.category-title {
+  margin: 0 0 8px;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------------- events */
+
+.event {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 13px 14px;
+  margin-bottom: 8px;
+}
+.event-head {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.event-title {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+.event-title a { text-decoration: none; }
+.event-title a:hover { text-decoration: underline; }
+.badges { display: flex; gap: 5px; flex: 0 0 auto; flex-wrap: wrap; justify-content: flex-end; }
+.badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: var(--chip-bg);
+  color: var(--muted);
+  white-space: nowrap;
+}
+.badge.is-free { background: var(--free-bg); color: var(--free); }
+.badge.freefood { background: var(--food-bg); color: var(--food); }
+
+.event-desc { margin: 7px 0 0; font-size: 0.9rem; }
+.event-meta {
+  margin: 7px 0 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.event-meta .when { font-variant-numeric: tabular-nums; }
+.sep { opacity: 0.5; }
+.event-note, .event-prereqs {
+  margin: 5px 0 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.event-prereqs { font-style: italic; }
+.event-source {
+  margin: 6px 0 0;
+  font-size: 0.72rem;
+  color: var(--past);
+}
+
+.no-results {
+  margin: 28px 0;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* ---------------------------------------------------------------- archive */
+
+.archive-list { list-style: none; padding: 0; margin: 8px 0 0; }
+.archive-list li { margin-bottom: 6px; }
+.archive-list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--text);
+}
+.arch-range { font-weight: 600; }
+.arch-count { color: var(--muted); font-size: 0.85rem; }
+
+/* ---------------------------------------------------------------- footer */
+
+.site-footer {
+  margin: 40px auto 28px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+[hidden] { display: none !important; }
+
+@media (min-width: 620px) {
+  .filters { flex-direction: row; align-items: center; justify-content: space-between; }
+  .chips { flex: 1 1 auto; }
+  .week-range { font-size: 1.9rem; }
+}

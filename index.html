@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NYC Weekly Rundown</title>
+<meta name="description" content="A daily-updating guide to free and cheap NYC events for the next 7 days — sports, markets, free food, and can't-miss experiences." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗽</text></svg>" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="title-row">
+        <h1>🗽 NYC Weekly Rundown</h1>
+        <span id="updated-badge" class="updated-badge">loading…</span>
+      </div>
+      <p class="subtitle">Free &amp; cheap things to do, sports to join, and don't-miss NYC moments — refreshed daily for the next 7 days.</p>
+    </div>
+  </header>
+
+  <nav class="filters wrap" id="filters" aria-label="Category filters">
+    <button class="chip active" data-filter="all">All</button>
+    <!-- category chips injected here -->
+  </nav>
+
+  <main class="wrap">
+    <section id="flexible-section" hidden>
+      <h2 class="section-title">Any day this week</h2>
+      <p class="section-sub">Not tied to a date — slot these in whenever you have a gap.</p>
+      <div id="flexible-list" class="card-grid"></div>
+    </section>
+
+    <div id="days-container"></div>
+
+    <p id="empty-state" class="empty-state" hidden>No events match this filter right now — try "All".</p>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>Built for a budget-conscious NYC newcomer. Data refreshes daily via research — always double-check RSVP/price details on the linked event page before heading out.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

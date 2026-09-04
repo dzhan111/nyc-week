@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NYC Week</title>
+<meta name="description" content="What's on in New York over the next seven days.">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>🗽</text></svg>">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <h1><a href="../../index.html">NYC Week</a></h1>
+        <p class="tagline">What's on in New York over the next seven days.</p>
+      </div>
+      <nav class="site-nav">
+        <a href="../../archive/index.html">Archive</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="fixture-banner"><b>Sample data.</b> These are placeholder events for testing the layout, not real listings.</p>
+    
+
+    <div class="week-head">
+      <h2 class="week-range">Sep 3 – 9</h2>
+      <p class="week-sub"><span class="count-live">7</span> events · researched Sep 3, 2026</p>
+    </div>
+
+    
+      <div class="filters">
+        <div class="chips" role="group" aria-label="Filter by category">
+          <button class="chip is-on" data-filter="category" data-value="all">All</button>
+          <button class="chip" data-filter="category" data-value="cost-effective">Cost-effective fun</button>
+          <button class="chip" data-filter="category" data-value="sports">Sports &amp; movement</button>
+          <button class="chip" data-filter="category" data-value="hobby">Hobby &amp; interest</button>
+          <button class="chip" data-filter="category" data-value="celebrations">Celebrations &amp; seasonal</button>
+          <button class="chip" data-filter="category" data-value="nyc-unique">NYC-unique</button>
+          <button class="chip" data-filter="category" data-value="free-food">Free food</button>
+        </div>
+        <div class="toggles">
+          <label class="toggle"><input type="checkbox" id="only-free"> Free only</label>
+          <label class="toggle"><input type="checkbox" id="only-freefood"> Free food only</label>
+          <label class="toggle borough-pick">
+            Borough
+            <select id="borough">
+              <option value="all">Any</option>
+              <option>Manhattan</option>
+              <option>Brooklyn</option>
+              <option>Queens</option>
+              <option>The Bronx</option>
+              <option>Staten Island</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+    <nav class="day-nav" aria-label="Jump to day">
+      <div class="day-nav-inner">
+            <a href="#day-2026-09-03" data-daylink="2026-09-03"><span>Thu</span><b>3</b></a>
+            <a href="#day-2026-09-04" data-daylink="2026-09-04"><span>Fri</span><b>4</b></a>
+            <a href="#day-2026-09-05" data-daylink="2026-09-05"><span>Sat</span><b>5</b></a>
+            <a href="#day-2026-09-08" data-daylink="2026-09-08"><span>Tue</span><b>8</b></a>
+            <a href="#day-2026-09-09" data-daylink="2026-09-09"><span>Wed</span><b>9</b></a>
+      </div>
+    </nav>
+
+    <p class="no-results" hidden>Nothing matches those filters.</p>
+
+    
+    <section class="day" id="day-2026-09-03" data-day="2026-09-03">
+      <h2 class="day-title">
+        <span class="day-relative"></span>
+        <span class="day-date">Thu, Sep 3</span>
+        <span class="day-count">2</span>
+      </h2>
+      
+      <section class="category" data-category="cost-effective">
+        <h3 class="category-title">Cost-effective fun</h3>
+        
+        <article class="event" id="2026-09-03-sample-sunset-pier-walk"
+                 data-category="cost-effective"
+                 data-borough="Brooklyn"
+                 data-free="1"
+                 data-freefood="0">
+          <div class="event-head">
+            <h4 class="event-title">
+              <a href="https://example.com/sample-pier-walk" target="_blank" rel="noopener noreferrer">SAMPLE — Sunset Pier Walk</a>
+            </h4>
+            <span class="badges">
+              <span class="badge price is-free">Free</span>
+              
+            </span>
+          </div>
+          <p class="event-desc">Placeholder event used to exercise the build. Not a real listing.</p>
+          <p class="event-meta">
+            <span class="where">Sample Pier · Red Hook</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="borough">Brooklyn</span>
+            <span class="sep" aria-hidden="true">·</span><span class="when">6:30 PM – 8 PM</span>
+          </p>
+          
+          
+          <p class="event-source">via fixture</p>
+        </article>
+      </section>
+
+      <section class="category" data-category="free-food">
+        <h3 class="category-title">Free food</h3>
+        
+        <article class="event" id="2026-09-03-sample-bodega-tasting"
+                 data-category="free-food"
+                 data-borough="Queens"
+                 data-free="1"
+                 data-freefood="1">
+          <div class="event-head">
+            <h4 class="event-title">
+              <a href="https://example.com/sample-tasting" target="_blank" rel="noopener noreferrer">SAMPLE — Bodega Tasting Day</a>
+            </h4>
+            <span class="badges">
+              <span class="badge price is-free">Free</span>
+              <span class="badge freefood">Free food</span>
+            </span>
+          </div>
+          <p class="event-desc">Placeholder free-food event with a long line note, to test badge rendering.</p>
+          <p class="event-meta">
+            <span class="where">Sample Market · Astoria</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="borough">Queens</span>
+            <span class="sep" aria-hidden="true">·</span><span class="when">12 PM</span>
+          </p>
+          <p class="event-note">free samples throughout</p>
+          <p class="event-prereqs">expect a line at opening</p>
+          <p class="event-source">via fixture</p>
+        </article>
+      </section>
+    </section>
+
+    <section class="day" id="day-2026-09-04" data-day="2026-09-04">
+      <h2 class="day-title">
+        <span class="day-relative"></span>
+        <span class="day-date">Fri, Sep 4</span>
+        <span class="day-count">1</span>
+      </h2>
+      
+      <section class="category" data-category="sports">
+        <h3 class="category-title">Sports &amp; movement</h3>
+        
+        <article class="event" id="2026-09-04-sample-pickup-soccer"
+                 data-category="sports"
+                 data-borough="Brooklyn"
+                 data-free="0"
+                 data-freefood="0">
+          <div class="event-head">
+            <h4 class="event-title">
+              <a href="https://example.com/sample-soccer" target="_blank" rel="noopener noreferrer">SAMPLE — Pickup Soccer</a>
+            </h4>
+            <span class="badges">
+              <span class="badge price ">$</span>
+              
+            </span>
+          </div>
+          <p class="event-desc">Placeholder recurring pickup game used to check the sports category styling.</p>
+          <p class="event-meta">
+            <span class="where">Sample Field · Williamsburg</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="borough">Brooklyn</span>
+            <span class="sep" aria-hidden="true">·</span><span class="when">7 PM – 9 PM</span>
+          </p>
+          
+          <p class="event-prereqs">RSVP required · all levels · bring cleats and a dark shirt · 18+</p>
+          <p class="event-source">via fixture</p>
+        </article>
+      </section>
+    </section>
+
+    <section class="day" id="day-2026-09-05" data-day="2026-09-05">
+      <h2 class="day-title">
+        <span class="day-relative"></span>
+        <span class="day-date">Sat, Sep 5</span>
+        <span class="day-count">2</span>
+      </h2>
+      
+      <section class="category" data-category="hobby">
+        <h3 class="category-title">Hobby &amp; interest</h3>
+        
+        <article class="event" id="2026-09-05-sample-chess-night"
+                 data-category="hobby"
+                 data-borough="Manhattan"
+                 data-free="1"
+                 data-freefood="0">
+          <div class="event-head">
+            <h4 class="event-title">
+              <a href="https://example.com/sample-chess" target="_blank" rel="noopener noreferrer">SAMPLE — Chess Night</a>
+            </h4>
+            <span class="badges">
+              <span class="badge price is-free">Free</span>
+              
+            </span>
+          </div>
+          <p class="event-desc">Placeholder hobby event to verify multi-category grouping within one day.</p>
+          <p class="event-meta">
+            <span class="where">Sample Cafe · Lower East Side</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="borough">Manhattan</span>
+            <span class="sep" aria-hidden="true">·</span><span class="when">6 PM</span>
+          </p>
+          
+          <p class="event-prereqs">beginners welcome</p>
+          <p class="event-source">via fixture</p>
+        </article>
+      </section>
+
+      <section class="category" data-category="celebrations">
+        <h3 class="category-title">Celebrations &amp; seasonal</h3>
+        
+        <article class="event" id="2026-09-05-sample-street-festival"
+                 data-category="celebrations"
+                 data-borough="Brooklyn"
+                 data-free="1"
+                 data-freefood="0">
+          <div class="event-head">
+            <h4 class="event-title">
+              <a href="https://example.com/sample-festival" target="_blank" rel="noopener noreferrer">SAMPLE — Street Festival</a>
+            </h4>
+            <span class="badges">
+              <span class="badge price is-free">Free</span>
+              
+            </span>
+          </div>
+          <p class="event-desc">Placeholder all-day seasonal event, used to test the all-day time rendering.</p>
+          <p class="event-meta">
+            <span class="where">Sample Avenue · Sunset Park</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="borough">Brooklyn</span>
+            <span class="sep" aria-hidden="true">·</span><span class="when">All day</span>
+          </p>
+          <p class="event-note">food stalls, mostly paid</p>
+          
+          <p class="event-source">via fixture</p>
+        </article>
+      </section>
+    </section>
+
+    <section class="day" id="day-2026-09-08" data-day="2026-09-08">
+      <h2 class="day-title">
+        <span class="day-relative"></span>
+        <span class="day-date">Tue, Sep 8</span>
+        <span class="day-count">1</span>
+      </h2>
+      
+      <section class="category" data-category="nyc-unique">
+        <h3 class="category-title">NYC-unique</h3>
+        
+        <article class="event" id="2026-09-08-sample-ferry-ride"
+                 data-category="nyc-unique"
+                 data-borough="Manhattan"
+                 data-free="0"
+                 data-freefood="0">
+          <div class="event-head">
+            <h4 class="event-title">
+              <a href="https://example.com/sample-ferry" target="_blank" rel="noopener noreferrer">SAMPLE — Harbor Ferry Ride</a>
+            </h4>
+            <span class="badges">
+              <span class="badge price ">$</span>
+              
+            </span>
+          </div>
+          <p class="event-desc">Placeholder NYC-unique entry sitting late in the week, to test day ordering.</p>
+          <p class="event-meta">
+            <span class="where">Sample Terminal · Financial District</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="borough">Manhattan</span>
+            <span class="sep" aria-hidden="true">·</span><span class="when">5 PM</span>
+          </p>
+          
+          <p class="event-prereqs">boards on the half hour</p>
+          <p class="event-source">via fixture</p>
+        </article>
+      </section>
+    </section>
+
+    <section class="day" id="day-2026-09-09" data-day="2026-09-09">
+      <h2 class="day-title">
+        <span class="day-relative"></span>
+        <span class="day-date">Wed, Sep 9</span>
+        <span class="day-count">1</span>
+      </h2>
+      
+      <section class="category" data-category="sports">
+        <h3 class="category-title">Sports &amp; movement</h3>
+        
+        <article class="event" id="2026-09-09-sample-climbing-meetup"
+                 data-category="sports"
+                 data-borough="Brooklyn"
+                 data-free="0"
+                 data-freefood="0">
+          <div class="event-head">
+            <h4 class="event-title">
+              <a href="https://example.com/sample-climbing" target="_blank" rel="noopener noreferrer">SAMPLE — Climbing Meetup</a>
+            </h4>
+            <span class="badges">
+              <span class="badge price ">$$</span>
+              
+            </span>
+          </div>
+          <p class="event-desc">Placeholder final-day event to confirm the last day section renders.</p>
+          <p class="event-meta">
+            <span class="where">Sample Gym · Gowanus</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span class="borough">Brooklyn</span>
+            <span class="sep" aria-hidden="true">·</span><span class="when">6:30 PM</span>
+          </p>
+          
+          <p class="event-prereqs">RSVP required · beginner friendly · bring shoes rentable on site · 18+</p>
+          <p class="event-source">via fixture</p>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>Regenerated weekly by <a href="https://github.com/dzhan111/nyc-week">nyc-week</a>. Always double-check times on the event's own page before heading out.</p>
+  </footer>
+<script type="application/json" id="week-data">{"days":["2026-09-03","2026-09-04","2026-09-05","2026-09-08","2026-09-09"]}</script>
+<script src="../../app.js" defer></script>
+</body>
+</html>

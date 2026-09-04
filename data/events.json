@@ -1,0 +1,520 @@
+{
+  "meta": {
+    "title": "NYC Weekly Rundown",
+    "generatedAt": "2026-09-03T11:20:00-04:00",
+    "windowStart": "2026-09-03",
+    "windowEnd": "2026-09-09",
+    "audience": "Budget-conscious recent grad living in NYC",
+    "categories": [
+      { "key": "cost", "label": "Cost-Effective Fun", "emoji": "🎈" },
+      { "key": "sports", "label": "Sports & Movement", "emoji": "🏃" },
+      { "key": "hobby", "label": "Hobby & Interest", "emoji": "🎲" },
+      { "key": "celebration", "label": "Celebrations & Seasonal", "emoji": "🎉" },
+      { "key": "unique", "label": "NYC-Unique Experience", "emoji": "🗽" },
+      { "key": "food", "label": "Free Food", "emoji": "🍽️" }
+    ]
+  },
+  "flexible": [
+    {
+      "id": "flex-chess",
+      "title": "Chess pickup at Washington Square Park",
+      "link": "https://www.nycgovparks.org/parks/washington-square-park/events",
+      "description": "Casual pickup chess at the park's SW chess tables — challenge a hustler for cash or just play a friend.",
+      "priceTier": "free",
+      "priceNote": "Free (cash games if you play the hustlers)",
+      "location": "Greenwich Village — Washington Square Park, SW chess tables",
+      "schedule": "Daily, mid-morning to evening",
+      "prereqs": "No RSVP, just show up",
+      "categories": ["hobby", "cost"],
+      "freeFood": false
+    },
+    {
+      "id": "flex-citypickle",
+      "title": "CityPickle pickleball drop-in",
+      "link": "https://www.citypickle.com/",
+      "description": "Drop-in pickleball on 14 courts with paddle rentals, all skill levels welcome.",
+      "priceTier": "$",
+      "priceNote": "$5 community sessions incl. paddle rental",
+      "location": "Central Park — Wollman Rink",
+      "schedule": "Daily, 8am–9pm",
+      "prereqs": "Walk-up or reserve online; all skill levels",
+      "categories": ["sports"],
+      "freeFood": false
+    },
+    {
+      "id": "flex-ferry",
+      "title": "Staten Island Ferry",
+      "link": "https://www.siferry.com/",
+      "description": "Free 25-minute ride past the Statue of Liberty and lower Manhattan skyline — the best free view in the city.",
+      "priceTier": "free",
+      "priceNote": "Free",
+      "location": "Whitehall Terminal (Manhattan) ↔ St. George (Staten Island)",
+      "schedule": "Runs ~every 30 min, 24/7",
+      "prereqs": "No RSVP — walk on",
+      "categories": ["unique", "cost"],
+      "freeFood": false
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-09-03",
+      "weekday": "Thursday",
+      "events": [
+        {
+          "id": "d1-hd-festival",
+          "title": "Met Summer HD Festival: free opera screenings",
+          "link": "https://www.lincolncenter.org/",
+          "description": "Free outdoor opera screenings (Wagner, Bellini, Tchaikovsky, Puccini) on the plaza.",
+          "priceTier": "free",
+          "priceNote": "Free",
+          "location": "Lincoln Center — Josie Robertson Plaza",
+          "schedule": "Through Sun 9/7, nightly at sunset",
+          "prereqs": "No RSVP, ~2,500 first-come seats — arrive early",
+          "categories": ["cost"],
+          "freeFood": false
+        },
+        {
+          "id": "d1-smorgasburg-cp",
+          "title": "Smorgasburg Central Park",
+          "link": "https://www.smorgasburg.com/new-york",
+          "description": "25+ food vendors at Columbus Circle, free entry with pay-per-item food.",
+          "priceTier": "$",
+          "priceNote": "Free entry, pay-per-item",
+          "location": "Columbus Circle, Manhattan",
+          "schedule": "Thu–Sat, 12–8pm (through 9/19)",
+          "prereqs": "No RSVP",
+          "categories": ["cost"],
+          "freeFood": false
+        },
+        {
+          "id": "d1-volo-pickleball",
+          "title": "Pickleball pickup (all levels)",
+          "link": "https://www.volosports.com/new-york-metro-area",
+          "description": "Drop-in pickup pickleball via Volo Sports.",
+          "priceTier": "$",
+          "priceNote": "Drop-in fee via Volo app",
+          "location": "The Door, Manhattan",
+          "schedule": "Tonight, 9–10:30pm",
+          "prereqs": "RSVP via Volo app — spots very limited",
+          "categories": ["sports"],
+          "freeFood": false
+        },
+        {
+          "id": "d1-volo-softball",
+          "title": "Coed softball drop-in (10v10)",
+          "link": "https://www.volosports.com/new-york-metro-area",
+          "description": "Drop-in coed softball via Volo Sports.",
+          "priceTier": "$",
+          "priceNote": "Drop-in fee via Volo app",
+          "location": "Prospect Park Parade Ground, Brooklyn",
+          "schedule": "Tonight, 8–10pm",
+          "prereqs": "RSVP via Volo app — spots very limited",
+          "categories": ["sports"],
+          "freeFood": false
+        },
+        {
+          "id": "d1-unicycle-1",
+          "title": "NYC Unicycle Festival, Day 1",
+          "link": "https://www.nycunicyclefestival.com/",
+          "description": "Long-distance group ride from Battery Park to Central Park, open to riders and spectators.",
+          "priceTier": "free",
+          "priceNote": "Free (event waiver required)",
+          "location": "Battery Park → Central Park, Manhattan",
+          "schedule": "10:30am–3pm",
+          "prereqs": "No experience needed to watch/cheer",
+          "categories": ["hobby", "celebration"],
+          "freeFood": false
+        },
+        {
+          "id": "d1-soft-strides",
+          "title": "Soft Strides Anniversary Run Club",
+          "link": "https://www.instagram.com/softstrides/",
+          "description": "Community run followed by a small celebration with DJ, doughnuts, and B-12 shots.",
+          "priceTier": "free",
+          "priceNote": "Free — includes free food",
+          "location": "200 Banker St, Greenpoint, Brooklyn",
+          "schedule": "8–10am",
+          "prereqs": "Check @softstrides for RSVP",
+          "categories": ["sports", "food"],
+          "freeFood": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "weekday": "Friday",
+      "events": [
+        {
+          "id": "d2-brass-fest",
+          "title": "Free Brass Festival",
+          "link": "https://bryantpark.org/",
+          "description": "Grammy-nominated New Breed Brass Band and other brass acts; blankets provided.",
+          "priceTier": "free",
+          "priceNote": "Free",
+          "location": "Bryant Park, Manhattan",
+          "schedule": "7–9:30pm",
+          "prereqs": "No RSVP",
+          "categories": ["cost"],
+          "freeFood": false
+        },
+        {
+          "id": "d2-coney-fireworks",
+          "title": "Coney Island Friday Night Fireworks",
+          "link": "https://www.coneyislandfunguide.com/friday-night-fireworks",
+          "description": "Free fireworks viewable from the boardwalk — likely the last Friday of the season.",
+          "priceTier": "free",
+          "priceNote": "Free",
+          "location": "Boardwalk btwn W 10th–15th St, Coney Island, Brooklyn",
+          "schedule": "~9:45pm",
+          "prereqs": "No RSVP",
+          "categories": ["cost", "celebration"],
+          "freeFood": false
+        },
+        {
+          "id": "d2-unicycle-2",
+          "title": "NYC Unicycle Festival, Day 2",
+          "link": "https://www.nycunicyclefestival.com/",
+          "description": "Group ride from Brooklyn Bridge to Coney Island, open to riders and onlookers.",
+          "priceTier": "free",
+          "priceNote": "Free (waiver required)",
+          "location": "Brooklyn Bridge → Coney Island",
+          "schedule": "2–6pm",
+          "prereqs": "No experience needed to watch",
+          "categories": ["sports", "celebration"],
+          "freeFood": false
+        },
+        {
+          "id": "d2-immigrant-jam",
+          "title": "Immigrant Jam comedy showcase",
+          "link": "https://www.caveat.nyc/",
+          "description": "Stand-up comedy from immigrant and first-gen comedians. The one paid 'special occasion' pick this week.",
+          "priceTier": "$$",
+          "priceNote": "$18.76 early bird / $25 regular",
+          "location": "Caveat, 21A Clinton St, Lower East Side",
+          "schedule": "7pm, 21+",
+          "prereqs": "Buy tickets in advance, 21+",
+          "categories": ["hobby"],
+          "freeFood": false
+        },
+        {
+          "id": "d2-sephora",
+          "title": "Sephora St. Marks Celebration",
+          "link": "https://www.sephora.com/",
+          "description": "Scratch-off cards for prizes, including gift cards totaling $2,000.",
+          "priceTier": "free",
+          "priceNote": "Free — free swag/prizes",
+          "location": "3 St Marks Pl, East Village",
+          "schedule": "Fri–Sun 9/4–9/6, 10am–7pm",
+          "prereqs": "No RSVP; expect a line on weekend afternoons",
+          "categories": ["food"],
+          "freeFood": true
+        },
+        {
+          "id": "d2-woobles",
+          "title": "The Woobles Pop-Up Shop",
+          "link": "https://theworkshopnyc.com/",
+          "description": "First 300 visitors per day get a free crochet kit; free friendship-bracelet station.",
+          "priceTier": "free",
+          "priceNote": "Free — free crochet kit (first 300/day)",
+          "location": "291 Grand St, Chinatown",
+          "schedule": "Fri–Sun 9/4–9/6, 10am–7pm",
+          "prereqs": "Go early for the kit",
+          "categories": ["food", "hobby"],
+          "freeFood": true
+        },
+        {
+          "id": "d2-kiko",
+          "title": "KIKO Milano SoHo Grand Opening",
+          "link": "https://www.kikocosmetics.com/",
+          "description": "First 500 guests get complimentary products; free makeup application/engraving.",
+          "priceTier": "free",
+          "priceNote": "Free — free products (first 500)",
+          "location": "430 W Broadway, SoHo",
+          "schedule": "Fri–Sun 9/4–9/6, 10am–9pm",
+          "prereqs": "Arrive early, expect a wait",
+          "categories": ["food"],
+          "freeFood": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "weekday": "Saturday",
+      "events": [
+        {
+          "id": "d3-smorgasburg-wb",
+          "title": "Smorgasburg: Pull Up a Plate",
+          "link": "https://www.smorgasburg.com/new-york",
+          "description": "Community party with live bands/DJs and 'Smorgin' on a Budget' $9 specials.",
+          "priceTier": "$",
+          "priceNote": "Free entry, food $",
+          "location": "Smorgasburg Williamsburg, Brooklyn",
+          "schedule": "11am–6pm",
+          "prereqs": "No RSVP",
+          "categories": ["cost"],
+          "freeFood": false
+        },
+        {
+          "id": "d3-richmond-fair",
+          "title": "Richmond County Fair (46th annual)",
+          "link": "https://www.historicrichmondtown.org/",
+          "description": "Old-timey fair with bingo, races, stilt walkers, and fair food. A genuinely different NYC day trip.",
+          "priceTier": "$",
+          "priceNote": "Check gate price",
+          "location": "Historic Richmond Town, Staten Island",
+          "schedule": "Sat–Mon, 9/5–9/7, 9am start",
+          "prereqs": "Ferry + short bus/car ride to venue",
+          "categories": ["unique", "celebration"],
+          "freeFood": false
+        },
+        {
+          "id": "d3-unicycle-3",
+          "title": "NYC Unicycle Festival, weekend leg",
+          "link": "https://www.nycunicyclefestival.com/",
+          "description": "Includes games and a learn-to-ride area — good one to actually try it, not just watch.",
+          "priceTier": "free",
+          "priceNote": "Free (waiver required)",
+          "location": "Jackson Heights, Queens",
+          "schedule": "12–5pm",
+          "prereqs": "No RSVP",
+          "categories": ["sports", "celebration"],
+          "freeFood": false
+        },
+        {
+          "id": "d3-jewish-museum",
+          "title": "Jewish Museum — free Saturdays",
+          "link": "https://thejewishmuseum.org/",
+          "description": "Free general admission every Saturday.",
+          "priceTier": "free",
+          "priceNote": "Free",
+          "location": "1109 5th Ave, Manhattan",
+          "schedule": "Regular museum hours",
+          "prereqs": "No RSVP needed",
+          "categories": ["cost", "hobby"],
+          "freeFood": false
+        },
+        {
+          "id": "d3-trivia",
+          "title": "Bar trivia (check day-of listings)",
+          "link": "https://nyctrivialeague.com/",
+          "description": "No single confirmed lineup for this date — check NYC Trivia League or NYCTriviaList.com day-of for a bar near you.",
+          "priceTier": "$",
+          "priceNote": "Usually free to play, drink minimum",
+          "location": "Various bars citywide",
+          "schedule": "Evenings",
+          "prereqs": "Check listing site day-of",
+          "categories": ["hobby"],
+          "freeFood": false
+        },
+        {
+          "id": "d3-lavazza",
+          "title": "Lavazza Tablì Coffee Pop-Up",
+          "link": "https://www.lavazza.com/",
+          "description": "Complimentary espresso + pastries, showcasing a new espresso system.",
+          "priceTier": "free",
+          "priceNote": "Free — complimentary espresso + pastries",
+          "location": "412 W 14th St, Meatpacking",
+          "schedule": "Sat–Sun 9/5–9/6, 10am–6pm",
+          "prereqs": "Walk-in",
+          "categories": ["food"],
+          "freeFood": true
+        },
+        {
+          "id": "d3-the-serve",
+          "title": "The Serve, presented by SharkNinja",
+          "link": "https://www.sharkninja.com/",
+          "description": "Interactive brand activation with styling, skincare, and complimentary drinks.",
+          "priceTier": "free",
+          "priceNote": "Free — complimentary styling/skincare/drinks",
+          "location": "Grand Central Terminal, Manhattan",
+          "schedule": "Sat–Sun 9/5–9/6, 12–6pm",
+          "prereqs": "No RSVP",
+          "categories": ["food"],
+          "freeFood": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "weekday": "Sunday",
+      "events": [
+        {
+          "id": "d4-islands-park",
+          "title": "Islands in the Park: Caribbean Jam",
+          "link": "https://www.prospectpark.org/",
+          "description": "Caribbean food, music, steel pan, and arts & crafts — a warm-up to the West Indian Day Parade.",
+          "priceTier": "free",
+          "priceNote": "Free",
+          "location": "Breeze Hill, Prospect Park, Brooklyn",
+          "schedule": "11am–6pm",
+          "prereqs": "No RSVP",
+          "categories": ["cost", "celebration"],
+          "freeFood": false
+        },
+        {
+          "id": "d4-between-tides",
+          "title": "Between Tides (ping-pong art installation)",
+          "link": "https://www.publicartfund.org/",
+          "description": "Interactive ping-pong table art installation on the boardwalk; free paddles/balls provided.",
+          "priceTier": "free",
+          "priceNote": "Free",
+          "location": "Beach 67, Rockaway, Queens",
+          "schedule": "Fri–Sun, free paddles provided",
+          "prereqs": "No RSVP",
+          "categories": ["cost", "hobby"],
+          "freeFood": false
+        },
+        {
+          "id": "d4-unicycle-4",
+          "title": "NYC Unicycle Festival, final day",
+          "link": "https://www.nycunicyclefestival.com/",
+          "description": "Last chance to try the learn-to-ride area.",
+          "priceTier": "free",
+          "priceNote": "Free (waiver required)",
+          "location": "Jackson Heights, Queens",
+          "schedule": "12–5pm",
+          "prereqs": "No RSVP",
+          "categories": ["sports", "celebration"],
+          "freeFood": false
+        },
+        {
+          "id": "d4-studio-museum",
+          "title": "Studio Museum in Harlem — free every Sunday",
+          "link": "https://www.studiomuseum.org/",
+          "description": "Free general admission every Sunday.",
+          "priceTier": "free",
+          "priceNote": "Free",
+          "location": "144 W 125th St, Harlem",
+          "schedule": "Regular hours",
+          "prereqs": "No RSVP",
+          "categories": ["cost", "hobby"],
+          "freeFood": false
+        },
+        {
+          "id": "d4-richmond-fair-2",
+          "title": "Richmond County Fair, Day 2",
+          "link": "https://www.historicrichmondtown.org/",
+          "description": "See Saturday listing for details.",
+          "priceTier": "$",
+          "priceNote": "Check gate price",
+          "location": "Historic Richmond Town, Staten Island",
+          "schedule": "9/6, see Sat for hours",
+          "prereqs": "Ferry + short bus/car ride to venue",
+          "categories": ["unique", "celebration"],
+          "freeFood": false
+        },
+        {
+          "id": "d4-popups-last-day",
+          "title": "Lavazza, The Serve, Sephora, Woobles, KIKO — last day",
+          "link": "https://www.timeout.com/newyork",
+          "description": "All the weekend pop-ups/free-food activations wrap today — last chance if you haven't gone.",
+          "priceTier": "free",
+          "priceNote": "Free — see individual listings",
+          "location": "Various Manhattan locations",
+          "schedule": "See Fri/Sat entries for hours",
+          "prereqs": "Check individual listings",
+          "categories": ["food"],
+          "freeFood": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "weekday": "Monday",
+      "holiday": "Labor Day",
+      "events": [
+        {
+          "id": "d5-wi-parade",
+          "title": "West Indian Day Parade & Carnival",
+          "link": "https://wiadcacarnival.org/",
+          "description": "One of the largest cultural parades in the US (~2 million attendees) — steel-pan bands, elaborate costumes, incredible Caribbean food along the route. Expect heavy crowds; go early for a good spot.",
+          "priceTier": "free",
+          "priceNote": "Free to watch",
+          "location": "Eastern Parkway, Crown Heights → Grand Army Plaza, Brooklyn",
+          "schedule": "11am, runs ~7 hours",
+          "prereqs": "Full-day, all-ages, but very packed by afternoon",
+          "categories": ["unique", "celebration"],
+          "freeFood": false,
+          "highlight": true
+        },
+        {
+          "id": "d5-bryant-movie",
+          "title": "Bryant Park Movie Night: Galaxy Quest",
+          "link": "https://bryantpark.org/activities/movie-nights",
+          "description": "Free outdoor screening. Bring a blanket, first-come-first-served.",
+          "priceTier": "free",
+          "priceNote": "Free",
+          "location": "Bryant Park, Manhattan",
+          "schedule": "Lawn opens 5pm, film at 8pm",
+          "prereqs": "No RSVP — arrive by 6–6:30pm for a good lawn spot",
+          "categories": ["cost"],
+          "freeFood": false
+        },
+        {
+          "id": "d5-richmond-fair-3",
+          "title": "Richmond County Fair, final day",
+          "link": "https://www.historicrichmondtown.org/",
+          "description": "See Saturday listing for details.",
+          "priceTier": "$",
+          "priceNote": "Check gate price",
+          "location": "Historic Richmond Town, Staten Island",
+          "schedule": "9/7, see Sat for hours",
+          "prereqs": "Ferry + short bus/car ride to venue",
+          "categories": ["unique", "celebration"],
+          "freeFood": false
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "weekday": "Tuesday",
+      "events": [
+        {
+          "id": "d6-guggenheim",
+          "title": "Guggenheim — pay-what-you-wish",
+          "link": "https://www.guggenheim.org/",
+          "description": "Walk-in, pay-what-you-wish admission — a legit way to see a major collection cheap.",
+          "priceTier": "$",
+          "priceNote": "Pay-what-you-wish",
+          "location": "1071 5th Ave, Manhattan",
+          "schedule": "4–5:30pm",
+          "prereqs": "No reservation required",
+          "categories": ["cost", "hobby"],
+          "freeFood": false
+        }
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "weekday": "Wednesday",
+      "events": [
+        {
+          "id": "d7-frick",
+          "title": "Frick Collection — pay-what-you-wish",
+          "link": "https://www.frick.org/",
+          "description": "Walk-in, pay-what-you-wish admission.",
+          "priceTier": "$",
+          "priceNote": "Pay-what-you-wish",
+          "location": "1 E 70th St, Manhattan",
+          "schedule": "2–6pm",
+          "prereqs": "Walk-in",
+          "categories": ["cost", "hobby"],
+          "freeFood": false
+        },
+        {
+          "id": "d7-nybg",
+          "title": "New York Botanical Garden — free morning hour",
+          "link": "https://www.nybg.org/",
+          "description": "Free 10–11am general admission (free all day for NYC residents). Worth a full garden day.",
+          "priceTier": "free",
+          "priceNote": "Free 10–11am; free all day for NYC residents",
+          "location": "Bronx",
+          "schedule": "10–11am (or all day w/ NYC ID)",
+          "prereqs": "NYC residents should bring proof of residency for all-day free entry",
+          "categories": ["cost", "unique"],
+          "freeFood": false
+        }
+      ]
+    }
+  ]
+}
